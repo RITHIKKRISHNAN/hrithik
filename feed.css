@@ -1,0 +1,213 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+                    
+body {
+    background: url(ded.jpg);
+    background-color: black;
+    background-size:cover;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+.text{
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  font-size: calc(5px + 6vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento",cursive;
+  text-align: center;
+  animation: blink 5s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+
+.form-container{
+    background: url();
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        color:rgb(229, 255, 0);
+        width: 400px;
+        height: 430px;
+        border-radius: 29px;
+        padding: 5em 2rem;
+        box-shadow: 0px 0px 20px 0px rgb(255, 2, 2);
+        border: 1px solid rgb(255, 3, 129);
+}
+
+.username,
+.feedback,
+.useremail{
+    text-align: center;
+    border: 2px solid #04b8ff;
+    color: white;
+    background: transparent;
+    padding: 1rem 2rem;
+    border-radius: 8rem;
+    width: 15rem;
+    font-size: 1.2rem;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+.useremail:hover{transform:scale(1.10);
+border-radius: 30px;}
+.username:hover{transform:scale(1.10);
+border-radius: 30px;}
+.feedback:hover{transform: scale(1.10);
+    border-radius: 0%;
+}
+
+.username:focus,
+.feedback:focus,
+.useremail:focus
+{
+    width: 20rem;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorChange 
+{
+
+    0% {
+        border-color: green;
+        color: green;
+    }
+
+    10% {
+        border-color: yellow;
+        color: yellow;
+
+    }
+
+
+    20% {
+        border-color: hotpink;
+        color:hotpink;
+    }
+
+        30% {
+            border-color: red;
+            color: red;
+        }
+    
+        40% {
+            border-color: purple;
+            color: purple;
+        }
+    
+        50% {
+            border-color: yellow;
+            color: yellow;
+    
+        }
+    
+        60% {
+            border-color: cyan;
+            color: cyan;
+        }
+    
+        70% {
+            border-color: skyblue;
+            color: skyblue;
+        }
+    
+        80% {
+            border-color: pink;
+            color: pink;
+        }
+    
+        90% {
+            border-color: red;
+            color: red;
+        }
+    
+        100% {
+            border-color: rgb(17, 0, 255);
+            color: rgb(247, 0, 255);
+        }
+    }
+
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding-right: 10px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #04b8ff;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #ff000d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color:lime;
+}
